@@ -14,6 +14,7 @@ describe('basic math functions', function () {
     expect(subtract).toExist
   })
 
+
   it("'multiply()' is a valid function", function() {
     expect(multiply).toExist
   })
@@ -58,6 +59,7 @@ describe('makeInt(n)', function() {
   it('assumes base 10', function() {
     expect(makeInt('0x2328')).toEqual(0)
   })
+
 
   it('returns NaN as appropriate', function() {
     expect(isNaN(makeInt('sldkjflksjf'))).toEqual(true)
